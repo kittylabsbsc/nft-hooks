@@ -1,0 +1,14 @@
+{
+  "generates": {
+    "./src/graph-queries/tuli-types.ts": {
+      "schema": "./graph-schemas/tuli.graphql",
+      "documents": "./src/graph-queries/tuli.ts",
+      "plugins": ["typescript", "typescript-operations"]
+    },
+    "./src/graph-queries/uniswap-types.ts": {
+      "schema": "./graph-schemas/uniswap.graphql",
+      "documents": "./src/graph-queries/uniswap.ts",
+      "plugins": ["typescript", "typescript-operations"]
+    }
+  }
+}
