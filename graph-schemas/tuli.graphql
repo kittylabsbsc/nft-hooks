@@ -1518,7 +1518,7 @@ type ReserveAuction {
   """<tokenContract>-<tokenId>"""
   token: String!
 
-  """The media for the auction, if it is a tuli NFT"""
+  """The media for the auction, if it is a Tuli NFT"""
   media: Media
 
   """Whether or not the auction has been approved by the curator"""

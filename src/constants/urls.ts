@@ -18,4 +18,4 @@ export const OPENSEA_API_URL_BY_NETWORK = {
   [Networks.RINKEBY]: 'https://rinkeby-api.opensea.io/api/v1/',
 };
 
-export const TULI_USERNAME_API_URL = 'https://tuli.ink/api/users';
+export const TULI_USERNAME_API_URL = 'https://tuli.work/profile/';

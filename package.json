@@ -1,6 +1,6 @@
 {
   "name": "@tulilabs/nft-hooks",
-  "version": "0.1.1",
+  "version": "0.3.2",
   "description": "Generic Rendering Component for xNFTs",
   "repository": "https://github.com/kittylabsbsc/nft-hooks",
   "homepage": "https://github.com/kittylabsbsc/nft-hooks#README",
@@ -27,7 +27,7 @@
     "@types/react": "^17.0.4",
     "fetch-mock-jest": "^1.5.1",
     "graphql-tools": "^7.0.4",
-    "husky": "^6.0.0",
+    "istanbul-badges-readme": "^1.2.0",
     "jest": "^26.6.3",
     "jest-serial-runner": "^1.1.0",
     "jest-transform-graphql": "^2.1.0",
@@ -37,6 +37,7 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
+    "make-badges": "istanbul-badges-readme --coverageDir=./coverage",
     "gen-graphql-types": "graphql-code-generator",
     "test": "jest",
     "clean": "rm -rf ./dist",
@@ -59,6 +60,7 @@
     "dataloader": "^2.0.0",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
+    "husky": "^7.0.1",
     "node-abort-controller": "^2.0.0",
     "react": "^17.0.2",
     "react-test-renderer": "^17.0.2",

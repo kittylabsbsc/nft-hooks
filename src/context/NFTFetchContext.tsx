@@ -4,7 +4,7 @@ import { MediaFetchAgent } from '../fetcher/MediaFetchAgent';
 
 export type FetchContext = InstanceType<typeof MediaFetchAgent>;
 
-export const defaultFetchAgent = new MediaFetchAgent(Networks.MAINNET);
+export const defaultFetchAgent = new MediaFetchAgent(Networks.BSC);
 
 export const NFTFetchContext = React.createContext(defaultFetchAgent);
 

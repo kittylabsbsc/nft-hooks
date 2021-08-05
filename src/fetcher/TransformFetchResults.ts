@@ -25,13 +25,14 @@ import { TULI_MEDIA_CONTRACT_BY_NETWORK } from '../constants/addresses';
 import { NetworkIDs } from '../constants/networks';
 
 const NULL_ETH_CURRENCY_ID = '0x0000000000000000000000000000000000000000';
+const KITTY_TOKEN_ID = '0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346';
 
 export function transformCurrencyEth(currency: CurrencyShortFragment) {
   let updatedCurrency = { ...currency };
-  if (currency.id === NULL_ETH_CURRENCY_ID) {
+  if (currency.id === KITTY_TOKEN_ID) {
     updatedCurrency.decimals = 18;
-    updatedCurrency.name = 'Ethereum';
-    updatedCurrency.symbol = 'ETH';
+    updatedCurrency.name = 'Kitty Token';
+    updatedCurrency.symbol = 'KITTY';
   }
   if (!updatedCurrency.decimals) {
     // Assume default 18 decimals

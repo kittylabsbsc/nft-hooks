@@ -1428,7 +1428,7 @@ export type ReserveAuction = {
   tokenId: Scalars['BigInt'];
   /** <tokenContract>-<tokenId> */
   token: Scalars['String'];
-  /** The media for the auction, if it is a tuli NFT */
+  /** The media for the auction, if it is a Tuli NFT */
   media?: Maybe<Media>;
   /** Whether or not the auction has been approved by the curator */
   approved: Scalars['Boolean'];
